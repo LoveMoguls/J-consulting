@@ -5,6 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>JÅ Consulting | Interim CFO och ekonomichef</title>
 <meta name="description" content="Johanna Åhl, interimskonsult inom ekonomi. CFO, Finance Director, ekonomichef och redovisningschef med 20 års erfarenhet från bland annat Celsius, foodora, Acne och Warner Music.">
+<link rel="alternate" hreflang="sv" href="https://vic-corp.net/">
+<link rel="alternate" hreflang="en" href="https://vic-corp.net/en/">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <meta property="og:title" content="JÅ Consulting | Interim CFO och ekonomichef">
@@ -31,6 +33,11 @@ header{position:sticky;top:0;z-index:10;background:rgba(247,245,240,.94);backdro
 .nav ul{display:flex;gap:28px;list-style:none;font-size:14px;font-weight:500}
 .nav ul a{text-decoration:none;color:var(--muted)}
 .nav ul a:hover{color:var(--teal)}
+
+.navr{display:flex;align-items:center;gap:28px}
+.lang{display:inline-flex;align-items:center;gap:7px;font-size:13px;font-weight:600;text-decoration:none;color:var(--navy);border:1px solid var(--line);border-radius:3px;padding:6px 10px;background:#fff}
+.lang:hover{border-color:var(--teal);color:var(--teal)}
+.lang svg{display:block;border-radius:1px;box-shadow:0 0 0 1px rgba(0,0,0,.08)}
 
 /* section label, as in the brand sheet */
 .sec{padding:72px 0 0}
@@ -132,11 +139,14 @@ footer img{height:26px;display:block}
 <header id="top">
   <div class="wrap nav">
     <a href="#top" aria-label="JÅ Consulting"><img src="logo.svg" alt="JÅ Consulting"></a>
+    <div class="navr">
     <ul>
       <li><a href="#tjanster">Tjänster</a></li>
       <li><a href="#erfarenhet">Erfarenhet</a></li>
       <li><a href="#kontakt">Kontakt</a></li>
     </ul>
+    <a class="lang" href="en/" hreflang="en" lang="en" title="Read in English"><svg viewBox="0 0 60 30" width="22" height="11" aria-hidden="true"><clipPath id="t"><path d="M30,15 h30 v15 z v15 h-30 z h-30 v-15 z v-15 h30 z"/></clipPath><path d="M0,0 v30 h60 v-30 z" fill="#012169"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/><path d="M0,0 L60,30 M60,0 L0,30" clip-path="url(#t)" stroke="#C8102E" stroke-width="4"/><path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"/><path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/></svg>EN</a>
+    </div>
   </div>
 </header>
 
