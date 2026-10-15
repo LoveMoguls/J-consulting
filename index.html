@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>JÅ Consulting | Interim CFO och ekonomichef</title>
+<meta name="description" content="Johanna Åhl, interimskonsult inom ekonomi. CFO, Finance Director, ekonomichef och redovisningschef med 20 års erfarenhet från bland annat Celsius, foodora, Acne och Warner Music.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta property="og:title" content="JÅ Consulting | Interim CFO och ekonomichef">
+<meta property="og:description" content="Erfaren ekonomiledare som kliver in när ni behöver det. Tillgänglig för interimsuppdrag.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Montserrat:wght@500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#1F2A44; --teal:#3E7C78; --copper:#C27C4E; --sand:#E8DFD0; --paper:#F7F5F0;
+  --muted:#5B6478; --rule:#B9C4C2; --line:#E2DDD3;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,sans-serif;color:var(--navy);background:var(--paper);line-height:1.6;font-size:17px}
+h1,h2,h3,.mont{font-family:Montserrat,sans-serif;font-weight:600;line-height:1.2}
+a{color:inherit}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+
+/* top bar */
+header{position:sticky;top:0;z-index:10;background:rgba(247,245,240,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:68px}
+.nav img{height:32px;display:block}
+.nav ul{display:flex;gap:28px;list-style:none;font-size:14px;font-weight:500}
+.nav ul a{text-decoration:none;color:var(--muted)}
+.nav ul a:hover{color:var(--teal)}
+
+/* section label, as in the brand sheet */
+.sec{padding:72px 0 0}
+.sec-label{font-family:Montserrat,sans-serif;font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--teal);padding-bottom:10px;border-bottom:1.5px solid var(--teal);opacity:.95;margin-bottom:44px}
+.sec-label span{opacity:.7;margin-right:4px}
+
+/* hero, mirrors the logo block */
+.hero{padding:84px 0 24px}
+.lockup{display:flex;align-items:center;gap:clamp(24px,4vw,48px)}
+.mono{font-family:Montserrat,sans-serif;font-weight:500;font-size:clamp(84px,14vw,168px);line-height:.9;letter-spacing:-.03em}
+.divider{width:1.5px;align-self:stretch;background:var(--rule);margin:10px 0}
+.lockup-txt .word{font-family:Montserrat,sans-serif;font-weight:500;font-size:clamp(28px,4.4vw,52px);line-height:1.1}
+.lockup-txt p{font-size:15px;color:var(--muted);margin-top:14px;max-width:30em}
+.pitch{margin-top:64px;display:grid;grid-template-columns:1.4fr 1fr;gap:48px;align-items:end}
+.pitch h1{font-size:clamp(28px,3.6vw,40px);max-width:18ch}
+.pitch h1 em{font-style:normal;color:var(--copper)}
+.pitch p{color:var(--muted);font-size:18px}
+.avail{display:inline-flex;align-items:center;gap:10px;font-size:14px;font-weight:500;color:var(--teal);margin-bottom:16px}
+.avail::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--teal);box-shadow:0 0 0 4px rgba(62,124,120,.18)}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.btn{display:inline-block;font-weight:500;text-decoration:none;padding:13px 22px;border-radius:3px;font-size:15px;transition:.15s}
+.btn.primary{background:var(--navy);color:var(--paper)}
+.btn.primary:hover{background:var(--teal)}
+.btn.ghost{border:1.5px solid var(--navy)}
+.btn.ghost:hover{background:var(--navy);color:var(--paper)}
+
+/* stats as swatches */
+.swatches{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.sw .chip{height:120px;border-radius:2px;display:flex;align-items:flex-end;padding:18px;font-family:Montserrat,sans-serif;font-weight:600;font-size:34px}
+.sw .c1{background:var(--navy);color:var(--paper)}
+.sw .c2{background:var(--teal);color:var(--paper)}
+.sw .c3{background:var(--copper);color:var(--paper)}
+.sw p{text-align:center;font-size:14px;color:var(--muted);margin-top:10px}
+.sw p b{display:block;color:var(--navy);font-weight:600}
+
+/* services */
+.services{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.svc{background:#fff;border:1px solid var(--line);border-radius:2px;padding:30px 30px 34px;position:relative;overflow:hidden}
+.svc::after{content:"";position:absolute;left:0;right:0;bottom:0;height:6px;background:var(--teal)}
+.svc .n{font-family:Montserrat,sans-serif;font-size:13px;font-weight:600;color:var(--copper);margin-bottom:12px}
+.svc h3{font-size:20px;margin-bottom:10px}
+.svc p{color:var(--muted);font-size:16px}
+
+/* two columns: experience + approach, like typography / tone of voice */
+.cols{display:grid;grid-template-columns:1.25fr 1fr;gap:0}
+.cols>div:first-child{padding-right:44px;border-right:1px solid var(--line)}
+.cols>div:last-child{padding-left:44px}
+.cols .sec-label{margin-bottom:28px}
+.timeline{list-style:none}
+.timeline li{padding:14px 0;border-bottom:1px solid var(--line);display:grid;grid-template-columns:96px 1fr;gap:16px}
+.timeline li:first-child{padding-top:0}
+.timeline .yr{font-size:14px;color:var(--muted);padding-top:3px}
+.timeline .co{font-family:Montserrat,sans-serif;font-weight:600;font-size:18px;display:block}
+.timeline .role{font-size:14px;color:var(--muted)}
+.tone{font-family:Montserrat,sans-serif;font-weight:600;font-size:clamp(28px,3.4vw,36px);line-height:1.35;margin-bottom:24px}
+.accent{width:56px;height:2px;background:var(--copper);margin:0 0 20px}
+.about p{color:var(--muted);margin-bottom:16px}
+.about p.lead{color:var(--navy)}
+
+/* example applications: navy card + signature card */
+.apps{display:grid;grid-template-columns:1fr 1fr;gap:20px;padding-bottom:88px}
+.card-navy{background:var(--navy);color:var(--paper);border-radius:2px;padding:44px 40px;display:flex;flex-direction:column;justify-content:space-between;min-height:300px}
+.card-navy .lk{display:flex;align-items:center;gap:22px}
+.card-navy .m{font-family:Montserrat,sans-serif;font-weight:500;font-size:72px;line-height:.9;letter-spacing:-.03em}
+.card-navy .d{width:1.5px;height:64px;background:rgba(247,245,240,.35)}
+.card-navy .w{font-family:Montserrat,sans-serif;font-weight:500;font-size:24px}
+.card-navy .tag{font-size:14px;color:#C9CFDA;border-top:1px solid rgba(247,245,240,.18);padding-top:16px;margin-top:40px}
+.card-sig{background:#fff;border:1px solid var(--line);border-radius:2px;position:relative;padding:40px 40px 56px;min-height:300px}
+.card-sig::after{content:"";position:absolute;left:0;right:0;bottom:0;height:22px;background:var(--teal)}
+.card-sig h2{font-size:26px;margin-bottom:8px}
+.card-sig .sub{color:var(--muted);margin-bottom:22px}
+.card-sig .accent{margin-bottom:22px}
+.card-sig ul{list-style:none;display:grid;gap:10px}
+.card-sig li a{text-decoration:none;display:flex;gap:14px;align-items:baseline}
+.card-sig li small{width:70px;font-size:13px;color:var(--muted)}
+.card-sig li a:hover span{color:var(--teal)}
+
+footer{border-top:1px solid var(--line);padding:28px 0;font-size:13px;color:var(--muted)}
+footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+footer img{height:26px;display:block}
+
+@media (max-width:820px){
+  .nav ul{display:none}
+  .hero{padding:56px 0 8px}
+  .pitch{grid-template-columns:1fr;gap:8px;margin-top:44px}
+  .swatches{grid-template-columns:1fr}
+  .sw .chip{height:88px}
+  .services,.apps,.cols{grid-template-columns:1fr}
+  .cols>div:first-child{padding-right:0;border-right:0}
+  .cols>div:last-child{padding-left:0;padding-top:72px}
+  .lockup-txt p{display:none}
+  .card-navy,.card-sig{padding:32px 26px 48px}
+  .card-navy .m{font-size:56px}
+}
+</style>
+</head>
+<body>
+
+<header id="top">
+  <div class="wrap nav">
+    <a href="#top" aria-label="JÅ Consulting"><img src="logo.svg" alt="JÅ Consulting"></a>
+    <ul>
+      <li><a href="#tjanster">Tjänster</a></li>
+      <li><a href="#erfarenhet">Erfarenhet</a></li>
+      <li><a href="#kontakt">Kontakt</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+  <div class="hero">
+    <div class="wrap">
+      <div class="lockup" aria-label="JÅ Consulting">
+        <div class="mono" aria-hidden="true">JÅ</div>
+        <div class="divider"></div>
+        <div class="lockup-txt">
+          <div class="word">JÅ Consulting</div>
+          <p>Interimskonsult inom ekonomi. CFO, Finance Director, ekonomichef och controller.</p>
+        </div>
+      </div>
+      <div class="pitch">
+        <div>
+          <div class="avail">Tillgänglig för interimsuppdrag</div>
+          <h1>Ekonomiledning som är <em>på plats</em> från dag ett.</h1>
+        </div>
+        <div>
+          <p>Jag heter Johanna Åhl och kliver in när ni behöver erfarenhet snabbt. Vid tillväxt, omställning eller när en nyckelroll står tom.</p>
+          <div class="btns">
+            <a class="btn primary" href="#kontakt">Hör av dig</a>
+            <a class="btn ghost" href="#erfarenhet">Se erfarenhet</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <div class="wrap">
+      <div class="sec-label"><span>1.</span> I korthet</div>
+      <div class="swatches">
+        <div class="sw"><div class="chip c1">20 år</div><p><b>Erfarenhet</b>inom ekonomi och finans</p></div>
+        <div class="sw"><div class="chip c2">10+ år</div><p><b>Ledning</b>som CFO och Finance Director</p></div>
+        <div class="sw"><div class="chip c3">EMEA</div><p><b>Räckvidd</b>Norden och internationella koncerner</p></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sec" id="tjanster">
+    <div class="wrap">
+      <div class="sec-label"><span>2.</span> Tjänster</div>
+      <div class="services">
+        <div class="svc"><div class="n">01</div><h3>Interim CFO och Finance Director</h3><p>Ledning av ekonomifunktionen, styrelserapportering och ett tydligt finansiellt beslutsunderlag för ledningsgruppen.</p></div>
+        <div class="svc"><div class="n">02</div><h3>Ekonomichef och redovisningschef</h3><p>Bokslut, rapportering och en stabil redovisningsprocess. Jag håller ihop teamet och leveranserna under tiden ni rekryterar.</p></div>
+        <div class="svc"><div class="n">03</div><h3>Financial Controller</h3><p>Budget, prognos och uppföljning som faktiskt används. Analys som gör det enklare att styra verksamheten.</p></div>
+        <div class="svc"><div class="n">04</div><h3>Förändring och uppbyggnad</h3><p>Bygga upp eller ställa om en ekonomifunktion, nordisk konsolidering, nya system och processer i bolag som växer.</p></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sec" id="erfarenhet">
+    <div class="wrap cols">
+      <div>
+        <div class="sec-label"><span>3.</span> Erfarenhet</div>
+        <ul class="timeline">
+          <li><span class="yr">2023–2026</span><span><span class="co">Celsius Holdings</span><span class="role">Finance Director EMEA</span></span></li>
+          <li><span class="yr">2019–2023</span><span><span class="co">foodora / Delivery Hero</span><span class="role">Nordic Finance Director</span></span></li>
+          <li><span class="yr">2015–2019</span><span><span class="co">Patriksson Communication</span><span class="role">CFO</span></span></li>
+          <li><span class="yr">2016–2018</span><span><span class="co">Jeanerica</span><span class="role">CFO</span></span></li>
+          <li><span class="yr">2011–2015</span><span><span class="co">Acne</span><span class="role">CFO</span></span></li>
+          <li><span class="yr">2008–2011</span><span><span class="co">Warner Music Group</span><span class="role">Accounting Manager, Nordic Business Controller</span></span></li>
+          <li><span class="yr">2006–2008</span><span><span class="co">Avega Group</span><span class="role">Financial Controller</span></span></li>
+        </ul>
+      </div>
+      <div class="about">
+        <div class="sec-label"><span>4.</span> Så jobbar jag</div>
+        <div class="tone">Tydlig<br>Rak<br>Snabbt på plats<br>Utan jargong</div>
+        <div class="accent"></div>
+        <p class="lead">Jag har lett ekonomifunktioner i allt från snabbväxande techbolag till svenska modevarumärken och internationella koncerner, både nordiskt och för hela EMEA.</p>
+        <p>Som interimskonsult vet jag att tid är det viktigaste ni köper. Jag sätter mig snabbt in i verksamheten, prioriterar det som spelar störst roll och lämnar efter mig en ekonomifunktion som fungerar även när jag har gått vidare.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="sec" id="kontakt">
+    <div class="wrap">
+      <div class="sec-label"><span>5.</span> Kontakt</div>
+      <div class="apps">
+        <div class="card-navy">
+          <div class="lk"><div class="m">JÅ</div><div class="d"></div><div class="w">JÅ Consulting</div></div>
+          <div class="tag">Interim CFO · Finance Director · Ekonomichef · Controller</div>
+        </div>
+        <div class="card-sig">
+          <h2>Behöver ni stöd i ekonomin?</h2>
+          <p class="sub">Berätta kort om läget så hörs vi.</p>
+          <div class="accent"></div>
+          <ul>
+            <li><a href="mailto:johanna@vic-corp.net"><small>E-post</small><span>johanna@vic-corp.net</span></a></li>
+            <li><a href="tel:+46703803501"><small>Telefon</small><span>+46 70 380 35 01</span></a></li>
+            <li><a href="https://www.linkedin.com/in/johanna-%C3%A5hl-794a8277/" target="_blank" rel="noopener"><small>LinkedIn</small><span>Johanna Åhl</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <img src="logo.svg" alt="JÅ Consulting">
+    <span>© <span id="y">2026</span> JÅ Consulting</span>
+  </div>
+</footer>
+
+<script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+</body>
+</html>
